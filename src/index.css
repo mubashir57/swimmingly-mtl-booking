@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -100,4 +101,54 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer utilities {
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+  
+  .animation-delay-700 {
+    animation-delay: 700ms;
+  }
+  
+  .animation-delay-1000 {
+    animation-delay: 1000ms;
+  }
+  
+  .animation-delay-1200 {
+    animation-delay: 1200ms;
+  }
+
+  .animation-duration-3s {
+    animation-duration: 3s;
+  }
+
+  .animation-duration-4s {
+    animation-duration: 4s;
+  }
+
+  .animation-duration-5s {
+    animation-duration: 5s;
+  }
+}
+
+/* Smooth scrolling for navigation links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom gradient animations */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-animate {
+  background-size: 200% 200%;
+  animation: gradient-shift 6s ease infinite;
 }
